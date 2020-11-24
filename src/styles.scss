@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+$font12: 12px;
+$font14: 14px;
+$Red: red;
+$Black: black;
+$w-400: 400;
+$w-500: 500;
+$w-600: 600;
+$w-700: 700;
+
+.font12{
+  font-size: $font12;
+}
+.font14{
+  font-size: $font14 ;
+}
+.colorRed{
+  color:$Red;
+}
+.colorBlack{
+  color:$Black;
+}
+.w-400{
+  font-weight: $w-400;
+}
+.w-500{
+  font-weight: $w-500;
+}
+.w-600{
+  font-weight: $w-600;
+}
+.w-700{
+  font-weight: $w-700;
+}
+
+
+.navbar-toggler{
+  background: red !important;
+}
+.navbar{
+  border: red solid 0.5px;
+}
+
+

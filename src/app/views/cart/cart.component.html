@@ -1,1 +1,431 @@
-<p>cart works!</p>
+<div class=" mb-5" style="padding-top: 6rem;">
+  <div class="row cart-comp">
+    <div class="col-7 p-4" style="background: white; border-radius: 20px;">
+      <h4 class="mx-3 pb-2 myBag colorRed" style="border-bottom: solid black 3px;">My Bag</h4>
+      <div>
+        <!-- Item1 -->
+        <div class="row p-4 mx-3 my-3 cartItem">
+          <div class="col-2 p-0">
+            <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width: 100%;">
+          </div>
+          <div class="col-10 pl-4 pr-0">
+            <div class="row">
+              <div class="col-10">
+                <h5 class="m-0 colorRed">Avery</h5>
+                <p class="m-0 font12 w-500">Tags:&nbsp;<span class="font12 colorRed w-400">short &nbsp;| &nbsp; fitted kimono</span></p>
+              </div>
+              <div class="col-2 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 d-flex align-items-center">
+                <p class="m-0 font12 w-500">Per Quantity: <span class="colorRed w-600">&#8358;20000</span></p>
+              </div>
+              <div class="col-4">
+                <div class="row mx-1">
+                  <div class="col-3 p-0 d-flex align-items-center">
+                    <p class="m-0 font12 w-500">Size:</p>
+                  </div>
+                  <div class="col-9 p-0">
+                    <select class="form-control m-0 font12 select-size" id="exampleFormControlSelect1">
+                      <option>8</option>
+                      <option>10</option>
+                      <option>12</option>
+                      <option>14</option>
+                      <option>16</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-4 d-flex align-items-center">
+
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <p class="m-0 font12 w-500">Quantity:</p>
+                  </div>
+                  <div class="col-6 d-flex align-items-center justify-content-between" style="background: gainsboro;">
+
+                       <div class="colorRed" style="cursor: pointer;" (click)="decreaseQuantity()">-</div>
+                      <div class=" "><p class="font14 m-0">{{quantityValue}}</p></div>
+                      <div class="colorRed" style="cursor: pointer;" (click)="increaseQuantity()">+</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desc-div">
+              <p class="m-0 font12 w-500">Description</p>
+              <p class="m-0 font12 colorRed">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Hic in eum ullam, officia, odit cum accusamus sit pariatur porro eveniet nobis recusandae nihil,
+                praesentium voluptates libero soluta atque cupiditate sequi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 -->
+
+        <!-- Item2 -->
+        <div class="row p-4 mx-3 my-3 cartItem">
+          <div class="col-2 p-0">
+            <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width: 100%;">
+          </div>
+          <div class="col-10 pl-4 pr-0">
+            <div class="row">
+              <div class="col-10">
+                <h5 class="m-0 colorRed">Avery</h5>
+                <p class="m-0 font12 w-500">Tags:&nbsp;<span class="font12 colorRed w-400">short &nbsp;| &nbsp; fitted kimono</span></p>
+              </div>
+              <div class="col-2 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </div>
+                        <div class="row">
+              <div class="col-4 d-flex align-items-center">
+                <p class="m-0 font12 w-500">Per Quantity: <span class="colorRed w-600">&#8358;20000</span></p>
+              </div>
+              <div class="col-4">
+                <div class="row mx-1">
+                  <div class="col-3 p-0 d-flex align-items-center">
+                    <p class="m-0 font12 w-500">Size:</p>
+                  </div>
+                  <div class="col-9 p-0">
+                    <select class="form-control m-0 font12 select-size" id="exampleFormControlSelect1">
+                      <option>8</option>
+                      <option>10</option>
+                      <option>12</option>
+                      <option>14</option>
+                      <option>16</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-4 d-flex align-items-center">
+
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <p class="m-0 font12 w-500">Quantity:</p>
+                  </div>
+                  <div class="col-6 d-flex align-items-center justify-content-between" style="background: gainsboro;">
+
+                       <div class="colorRed" style="cursor: pointer;" (click)="decreaseQuantity()">-</div>
+                      <div class=" "><p class="font14 m-0">{{quantityValue}}</p></div>
+                      <div class="colorRed" style="cursor: pointer;" (click)="increaseQuantity()">+</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="desc-div">
+              <p class="m-0 font12 w-500">Description</p>
+              <p class="m-0 font12 colorRed">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Hic in eum ullam, officia, odit cum accusamus sit pariatur porro eveniet nobis recusandae nihil,
+                praesentium voluptates libero soluta atque cupiditate sequi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item2-->
+
+        <!-- Item3 -->
+        <div class="row p-4 mx-3 my-3 cartItem">
+          <div class="col-2 p-0">
+            <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width: 100%;">
+          </div>
+          <div class="col-10 pl-4 pr-0">
+            <div class="row">
+              <div class="col-10">
+                <h5 class="m-0 colorRed">Avery</h5>
+                <p class="m-0 font12 w-500">Tags:&nbsp;<span class="font12 colorRed w-400">short &nbsp;| &nbsp; fitted kimono</span></p>
+              </div>
+              <div class="col-2 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+            </div>
+
+                       <div class="row">
+              <div class="col-4 d-flex align-items-center">
+                <p class="m-0 font12 w-500">Per Quantity: <span class="colorRed w-600">&#8358;20000</span></p>
+              </div>
+              <div class="col-4">
+                <div class="row mx-1">
+                  <div class="col-3 p-0 d-flex align-items-center">
+                    <p class="m-0 font12 w-500">Size:</p>
+                  </div>
+                  <div class="col-9 p-0">
+                    <select class="form-control m-0 font12 select-size" id="exampleFormControlSelect1">
+                      <option>8</option>
+                      <option>10</option>
+                      <option>12</option>
+                      <option>14</option>
+                      <option>16</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-4 d-flex align-items-center">
+
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <p class="m-0 font12 w-500">Quantity:</p>
+                  </div>
+                  <div class="col-6 d-flex align-items-center justify-content-between" style="background: gainsboro;">
+
+                      <div class="colorRed" style="cursor: pointer;" (click)="decreaseQuantity()">-</div>
+                      <div class=" "><p class="font14 m-0">{{quantityValue}}</p></div>
+                      <div class="colorRed" style="cursor: pointer;" (click)="increaseQuantity()">+</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="desc-div">
+              <p class="m-0 font12 w-500">Description</p>
+              <p class="m-0 font12 colorRed">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Hic in eum ullam, officia, odit cum accusamus sit pariatur porro eveniet nobis recusandae nihil,
+                praesentium voluptates libero soluta atque cupiditate sequi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item3 -->
+
+      </div>
+    </div>
+    <div class="col-4 p-4 ml-4" style="background: white; border-radius: 20px;">
+      <!-- <label class="custom-field one"for="">
+        <input type="text" placeholder="enter name" class="w-100" required>
+        <span class="placeholder">first Name</span>
+      </label> -->
+      <div class="detailsHeader">
+        <h4 class="m-0 colorRed text-center" style="">Personal Details</h4>
+        <p class="subtitle text-center">Please, fill in your details before checking out </p>
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" id="inputFieldFirstName" required class="input-area w-100">
+        <label for="inputFieldFirstName" class="label"> First Name</label>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" id="inputFieldLastName" required class="input-area w-100">
+        <label for="inputFieldLastName" class="label">Last Name</label>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" id="inputFieldPhoneNumber" required class="input-area w-100">
+        <label for="inputFieldPhoneNumber" class="label">Phone Number</label>
+      </div>
+      <div class="input-group mb-3">
+        <input type="email" id="inputFieldEmailAddress" required class="input-area w-100">
+        <label for="inputFieldEmailAddress" class="label">Email Address</label>
+      </div>
+      <div class="input-group mb-3">
+        <input type="email" id="inputAddress" required class="input-area w-100">
+        <label for="inputFieldAddress" class="label">Address</label>
+      </div>
+      <div class="summary mt-5">
+         <h4 class=" colorRed text-center" style="">SUMMARY</h4>
+         <p class="total-items colorRed mb-0">Total Items :&nbsp;<span class="item-count colorBlack">6</span></p>
+         <p class="total-price colorRed">Total Price : &nbsp;<span class="item-count colorBlack">&#8358;50,000</span></p>
+      </div>
+      <div class="checkOut">
+        <button class="btn btn-black w-100 m-0">CHECK OUT</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Recommended Product Component -->
+<div class="mx-3 p-3" style="background: white;">
+  <!-- Heading -->
+  <div>
+    <div>
+      <h5 style="margin: 2rem 1rem;">Other Products You May Like<span class="float-right view-more font14">view more</span>
+      </h5>
+    </div>
+  </div>
+  <!-- Heading -->
+
+  <!-- Recommended Product card -->
+  <div class="row">
+    <div class="col-md-3 col-lg-3 col-sm-12 d-flex justify-content-center">
+      <div class="card mb-3" style="max-width: 18rem; border:solid red 1px; border-radius: 0px;">
+        <div class="card-header bg-transparent">
+          <h4 class="text-center" style="color: red;">Avery</h4>
+          <p class="text-center font12 mb-0 w-600" style="color: red;">Tags:&nbsp;<span>short&nbsp;</span>|&nbsp;<span>Fitted Kimono</span></p>
+        </div>
+        <div class="text-success">
+          <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width:100%;">
+        </div>
+         <div class="card-footer bg-transparent">
+          <div class="row">
+            <div class="col-8">
+              <h5 class="amount colorRed">&#8358; 20,000</h5>
+              <p class="size colorRed font14 w-500">Size:
+                <span class="sizeNum  font12 text-light" style="background: red;">8</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">10</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">12</span>
+                <span class="sizeNum  ml-1 font12 text-light" style="background: red;">14</span>
+              </p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+          </div>
+          <div class="view-details">
+            <button class="btn btn-danger w-100 m-0 py-1">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-12 d-flex justify-content-center">
+      <div class="card mb-3" style="max-width: 18rem; border:solid red 1px; border-radius: 0px;">
+        <div class="card-header bg-transparent">
+          <h4 class="text-center" style="color: red;">Avery</h4>
+          <p class="text-center font12 mb-0 w-600" style="color: red;">Tags:&nbsp;<span>short&nbsp;</span>|&nbsp;<span>Fitted Kimono</span></p>
+        </div>
+        <div class="text-success">
+          <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width:100%;">
+        </div>
+         <div class="card-footer bg-transparent">
+          <div class="row">
+            <div class="col-8">
+              <h5 class="amount colorRed">&#8358; 20,000</h5>
+              <p class="size colorRed font14 w-500">Size:
+                <span class="sizeNum  font12 text-light" style="background: red;">8</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">10</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">12</span>
+                <span class="sizeNum  ml-1 font12 text-light" style="background: red;">14</span>
+              </p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+          </div>
+          <div class="view-details">
+            <button class="btn btn-danger w-100 m-0 py-1">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-12 d-flex justify-content-center">
+      <div class="card mb-3" style="max-width: 18rem; border:solid red 1px; border-radius: 0px;">
+        <div class="card-header bg-transparent">
+          <h4 class="text-center" style="color: red;">Avery</h4>
+          <p class="text-center font12 mb-0 w-600" style="color: red;">Tags:&nbsp;<span>short&nbsp;</span>|&nbsp;<span>Fitted Kimono</span></p>
+        </div>
+        <div class="text-success">
+          <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width:100%;">
+        </div>
+         <div class="card-footer bg-transparent">
+          <div class="row">
+            <div class="col-8">
+              <h5 class="amount colorRed">&#8358; 20,000</h5>
+              <p class="size colorRed font14 w-500">Size:
+                <span class="sizeNum  font12 text-light" style="background: red;">8</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">10</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">12</span>
+                <span class="sizeNum  ml-1 font12 text-light" style="background: red;">14</span>
+              </p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+          </div>
+          <div class="view-details">
+            <button class="btn btn-danger w-100 m-0 py-1">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-12 d-flex justify-content-center">
+      <div class="card mb-3" style="max-width: 18rem; border:solid red 1px; border-radius: 0px;">
+        <div class="card-header bg-transparent">
+          <h4 class="text-center" style="color: red;">Avery</h4>
+          <p class="text-center font12 mb-0 w-600" style="color: red;">Tags:&nbsp;<span>short&nbsp;</span>|&nbsp;<span>Fitted Kimono</span></p>
+        </div>
+        <div class="text-success">
+          <img src="../../../assets/images/printedCloth.jpg" alt="img" style="width:100%;">
+        </div>
+        <div class="card-footer bg-transparent">
+          <div class="row">
+            <div class="col-8">
+              <h5 class="amount colorRed">&#8358; 20,000</h5>
+              <p class="size colorRed font14 w-500">Size:
+                <span class="sizeNum  font12 text-light" style="background: red;">8</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">10</span>
+                <span class="sizeNum ml-1 font12 text-light" style="background: red;">12</span>
+                <span class="sizeNum  ml-1 font12 text-light" style="background: red;">14</span>
+              </p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+
+                  <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </div>
+          </div>
+          <div class="view-details">
+            <button class="btn btn-danger w-100 m-0 py-1">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Recommended Product card -->
+</div>
+<!-- Recommended Product Component -->
+
+</div>
+

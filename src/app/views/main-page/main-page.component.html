@@ -1,1 +1,256 @@
-<p>main-page works!</p>
+<!-- <main> -->
+<div class="main--div">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark white ie-nav fixed-top py-lg-3 py-md-3" [containerInside]="false" >
+    <mdb-navbar-brand class="logo-com">
+        <a class="logo navbar-brand text-dark" routerLink="/home" routerLinkActive="activebutton" class=""><strong>Navbar</strong></a>
+    </mdb-navbar-brand>
+    <!-- <links> -->
+        <ul class="navbar-nav mr-auto list-tray">
+            <li class="nav-item active waves-light" mdbWavesEffect>
+                <!-- <a class="nav-link">Home <span class="sr-only">(current)</span></a> -->
+                <a class="nav-link text-dark list-items" routerLink="/about-us" routerLinkActive="activebutton">About</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link text-dark list-items" routerLink="/products" routerLinkActive="activebutton">New Arrivals</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link text-dark list-items" routerLink="/products" routerLinkActive="activebutton">Women</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link text-dark list-items" routerLink="/products" routerLinkActive="activebutton">Kiddies</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link text-dark " routerLink="/contact-us" routerLinkActive="activebutton">Contact</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav pl-2 search"style="border: solid 1px red;" >
+          <li class="nav-item waves-light" mdbWavesEffect>
+                <!-- <form class="form-inline waves-light" mdbWavesEffect > -->
+                  <div class="my-0 search-bar">
+                    <input class="mr-sm-2 search--input pl-4" type="text" placeholder="Search Collections">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search colorRed search-icon" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                      <path fill-rule="evenodd"
+                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    </svg>
+                  </div>
+                <!-- </form> -->
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link text-dark"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                    class="bi bi-person-circle colorRed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd"
+                      d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                  </svg></a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link text-dark" routerLink="/cart" routerLinkActive="activebutton">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bag-x colorRed" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+
+                    <path fill-rule="evenodd"
+                      d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- <div style="border: solid 1px red;">
+
+          <form class="form-inline waves-light" mdbWavesEffect >
+            <div class=" my-0">
+                <input class="mr-sm-2" type="text" placeholder="Search">
+            </div>
+        </form>
+        </div> -->
+
+    <!-- </links> -->
+</mdb-navbar>
+<!-- Main -->
+<!-- <main >
+    <div class="container" style="height:1500px;">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <h2>This Navbar is fixed</h2>
+                <h5>It will always stay visible on the top, even when you scroll down</h5>
+            </div>
+        </div>
+    </div>
+</main> -->
+<!-- /.Main -->
+
+<!-- <div>
+  <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'" [isControls]="false">
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Light mask</h3>
+      <p>First text</p>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Strong mask</h3>
+      <p>Secondary text</p>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <h3 class="h3-responsive">Slight mask</h3>
+      <p>Third text</p>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+</div> -->
+
+
+
+
+
+<div class="m-0 p-0" >
+<router-outlet></router-outlet>
+</div>
+
+
+
+
+
+
+
+<div class="footer-fix-btm m-0 p-0">
+  <!-- Footer -->
+  <footer class="page-footer m-0 p-0" style="background: gray;">
+    <!-- Footer Links -->
+    <!-- <hr style="background: white; margin-top: .5rem; margin-bottom: .5rem;"/> -->
+    <hr style="background: white; margin-top: 0rem; margin-bottom: 0rem;"/>
+    <hr style="background: white; margin-top: .5rem; margin-bottom: .5rem;"/>
+    <hr style="background: white; margin-top: .5rem; margin-bottom: .5rem;"/>
+    <div class="container text-center text-md-left py-5">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-2">Logo</h5>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+            <li>
+              <a href="#!">contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Products</a>
+            </li>
+            <li>
+              <a href="#!">New Arrivals</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Women</a>
+            </li>
+            <li>
+              <a href="#!">Kiddies</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+          <!-- Links -->
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!">
+                <div>
+                  <input placeholder="Enter email address"/>
+                  <span>Sign up for newsletter</span>
+                </div>
+              </a>
+            </li>
+            <li>
+
+                <p>Follow us
+                  <span>
+                  <a mdbBtn floating="true" color="fb" class="mx-1" mdbWavesEffect>
+                  <mdb-icon fab icon="facebook"></mdb-icon></a>
+                  </span>
+              <span>
+                <a mdbBtn floating="true" color="tw" class="mx-1" mdbWavesEffect>
+                <mdb-icon fab icon="twitter"></mdb-icon>
+              </a>
+              </span>
+              <span>
+                <a mdbBtn floating="true" color="ig" class="mx-1" mdbWavesEffect>
+                <mdb-icon fab icon="instagram"></mdb-icon>
+              </a>
+              </span>
+            </p>
+
+            </li>
+
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <hr style="background: white; margin-top: .5rem; margin-bottom: .5rem;"/>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white" style="background: black;">
+       © 2020 &nbsp; &nbsp;|&nbsp; &nbsp; dartsntucks.com &nbsp; &nbsp;|&nbsp; &nbsp; All rights reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+
+<!-- </main> -->
+</div>
+
